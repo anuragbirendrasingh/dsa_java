@@ -1,0 +1,49 @@
+OOPs-Concepts-Revision/
+│
+├── README.md
+├── .gitignore
+├── package.json or requirements.txt  
+│
+├── 01_basics/
+│   ├── class_and_object.js
+│   ├── constructor.js
+│   ├── methods.js
+│   └── static_vs_instance.js
+│
+├── 02_encapsulation/
+│   ├── private_fields.js
+│   ├── getters_setters.js
+│   └── example_bank_account.js
+│
+├── 03_inheritance/
+│   ├── single_inheritance.js
+│   ├── multilevel_inheritance.js
+│   └── example_vehicle_hierarchy.js
+│
+├── 04_polymorphism/
+│   ├── method_overriding.js
+│   ├── method_overloading.js (if applicable)
+│   └── example_shapes.js
+│
+├── 05_abstraction/
+│   ├── abstract_classes.js
+│   ├── real_life_example.js
+│   └── notes.md
+│
+├── 06_interfaces/
+│   ├── interface_example.js
+│   ├── multiple_interfaces.js
+│   └── notes.md
+│
+├── 07_advanced/
+│   ├── composition_vs_inheritance.js
+│   ├── mixins.js
+│   └── solid_principles.md
+│
+└── 08_projects/
+    ├── library_management/
+    │   └── main.js
+    ├── student_portal/
+    │   └── main.js
+    └── ecommerce/
+        └── main.js
