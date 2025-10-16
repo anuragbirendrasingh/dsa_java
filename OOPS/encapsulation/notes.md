@@ -5,7 +5,6 @@ Encapsulation is a foundational concept in **Object-Oriented Programming (OOP)**
 At its core, Encapsulation is about **bundling data (variables) and the methods (functions) that operate on that data into a single unit** (the class). More importantly, it involves **restricting direct access** to the internal state of an object.
 
 
-
 ---
 
 ### 🔑 How It Works (The Java Approach)
