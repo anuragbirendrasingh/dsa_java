@@ -1,4 +1,4 @@
-package OOPS.encapsulation;
+package OOPS.Encapsulation;
 
 public class student {
     private String name ;
