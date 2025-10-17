@@ -33,7 +33,7 @@ public class student {
         student s2 = new student();
         s2.setName("kishan");
         s2.setage(-20);
-        s2.display();
+        s2.display() ;
 
     }
 
