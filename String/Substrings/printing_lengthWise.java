@@ -1,4 +1,4 @@
-package String.Substrings.FixedLength;
+package String.Substrings;
 
 public class printing_lengthWise {
     public static void main(String[] args) {

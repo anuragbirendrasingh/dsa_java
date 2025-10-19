@@ -1,4 +1,4 @@
-package String.Substrings.FixedLength;
+package String.Substrings;
 
 public class allSubstring {
     public static void main(String[] args) {
