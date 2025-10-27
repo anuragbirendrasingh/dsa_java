@@ -1,5 +1,7 @@
 package Tree.Binary_Tree_Implemenatation;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Binary_Tree {
@@ -86,5 +88,83 @@ public class Binary_Tree {
         boolean left = find(nn.left,item);
         boolean right = find(nn.right,item);
         return left|| right ;
+    }
+
+    public int ht() {
+		return ht(root);
+	}
+
+	private int ht(Node node) {
+		if (node == null) {
+			return 0;
+		}
+		int lh = ht(node.left);
+		int rh = ht(node.right);
+		return Math.max(lh, rh) + 1;
+
+	}
+
+	public void PreOrder() {
+		PreOrder(this.root);
+		System.out.println();
+	}
+
+	private void PreOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+
+		System.out.print(node.val + " ");
+		PreOrder(node.left);
+		PreOrder(node.right);
+	}
+
+	public void PostOrder() {
+		PostOrder(this.root);
+		System.out.println();
+	}
+
+	private void PostOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+		PostOrder(node.left);
+		PostOrder(node.right);
+		System.out.print(node.val + " ");
+	}
+	public void INOrder() {
+		INOrder(this.root);
+		System.out.println();
+	}
+	
+	private void INOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+		INOrder(node.left);
+		System.out.print(node.val + " ");
+		INOrder(node.right);
+		
+	}
+
+    public void Level_Order(){
+           Level_Order(root);
+    }
+
+    private void Level_Order(Node root){
+         Queue <Node> q = new LinkedList<>();
+         q.add(root);
+         while(!q.isEmpty()){
+            Node currNode = q.poll();
+            System.out.print(currNode.val + " ");
+            
+            if(currNode.left!=null){
+               q.add(currNode.left);
+            }
+            if(currNode.right!=null){
+                q.add(currNode.right);
+            }
+         }
+         System.out.println();
     }
 }
